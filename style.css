@@ -166,5 +166,16 @@ footer {
   to {
     opacity: 1;
     transform: translateY(0);
+    
   }
+}
+/* EVOLVE EFFECT */
+.glass-card {
+  transition: transform 0.8s ease, box-shadow 0.8s ease;
+  transform-style: preserve-3d;
+}
+
+.glass-card.evolved {
+  transform: rotateY(360deg) scale(1.03);
+  box-shadow: 0 0 60px rgba(56, 189, 248, 0.6);
 }
