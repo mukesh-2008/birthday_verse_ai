@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -137,4 +136,35 @@ footer {
   padding: 40px 20px;
   font-size: 15px;
   color: #94a3b8;
+}
+/* CREATOR SIGNATURE */
+.creator {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #94a3b8;
+  animation: fadeCreator 2.5s ease;
+}
+
+.creator a {
+  color: #38bdf8;
+  text-decoration: none;
+  font-weight: 500;
+  margin-right: 6px;
+  transition: text-shadow 0.3s, transform 0.3s;
+}
+
+.creator a:hover {
+  text-shadow: 0 0 12px #38bdf8;
+  transform: scale(1.05);
+}
+
+@keyframes fadeCreator {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
